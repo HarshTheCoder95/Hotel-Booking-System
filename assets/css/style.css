@@ -1,0 +1,1068 @@
+/* ==========================================================================
+   Modern Reset & Typography
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    /* Very soft blue/purple tinted background from the image */
+    background-color: #f2f5fc; 
+    color: #1a1a2e;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1; 
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==========================================================================
+   Clean Light Navbar
+   ========================================================================== */
+.navbar {
+    background: #ffffff;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo a {
+    color: #a26bfa; /* Primary purple logo */
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #4a5568;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #a26bfa; /* Purple hover state */
+}
+
+/* ==========================================================================
+   Soft Authentication Card
+   ========================================================================== */
+.auth-container {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 50px 40px;
+    border-radius: 24px; /* Softer, rounder corners like the image */
+    box-shadow: 0 10px 40px rgba(162, 107, 250, 0.1);
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 5px;
+    color: #121212;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.auth-container p.subtitle {
+    text-align: center;
+    color: #718096;
+    font-size: 0.85rem;
+    margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   Inputs (Pill Design)
+   ========================================================================== */
+
+/* ==========================================================================
+   Input Icons & Forgot Password Link
+   ========================================================================== */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper i {
+    position: absolute;
+    left: 16px;
+    color: #a0aec0;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+/* Add padding to the left so text doesn't overlap the icon */
+.form-group input.with-icon {
+    padding-left: 45px;
+}
+
+/* Highlight icon when input is focused */
+.form-group input.with-icon:focus + i,
+.input-wrapper:focus-within i {
+    color: #a26bfa;
+}
+
+.forgot-link {
+    display: block;
+    text-align: right;
+    font-size: 0.85rem;
+    color: #718096;
+    margin-top: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.forgot-link:hover {
+    color: #a26bfa;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 0.85rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 18px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px; /* Rounded pill inputs */
+    font-size: 0.95rem;
+    color: #2d3748;
+    transition: all 0.3s ease;
+}
+
+/* Soft purple focus state */
+.form-group input:focus {
+    outline: none;
+    border-color: #a26bfa;
+    box-shadow: 0 0 0 4px rgba(162, 107, 250, 0.15);
+}
+
+/* ==========================================================================
+   Buttons (Primary Purple)
+   ========================================================================== */
+.btn {
+    display: inline-block;
+    padding: 14px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px; /* Rounded pill button */
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn.primary {
+    background-color: #b57df3; /* The exact pastel purple from the image */
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(181, 125, 243, 0.3);
+}
+
+.btn.primary:hover {
+    background-color: #9d5ce6;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(181, 125, 243, 0.4);
+}
+
+/* ==========================================================================
+   Links & Footer
+   ========================================================================== */
+.auth-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: #718096;
+}
+
+.auth-link a {
+    color: #121212;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.auth-link a:hover {
+    color: #a26bfa;
+}
+
+.site-footer {
+    background: transparent;
+    color: #718096;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   Massive Modern Homepage Styles
+   ========================================================================== */
+
+/* Hero Section */
+.modern-hero {
+    position: relative;
+    height: 70vh;
+    min-height: 500px;
+    border-radius: 32px;
+    background-color: #a26bfa;
+    /* In production, replace the URL below with a real hotel image path */
+    background-image: url('https://images.unsplash.com/photo-1542314831-c6a4d1424391?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    margin-bottom: -60px; /* Pulls the search bar up over the image */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to bottom, rgba(26, 26, 46, 0.4), rgba(26, 26, 46, 0.8));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    color: #ffffff;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.9);
+}
+
+/* Floating Search Bar */
+.floating-search-container {
+    position: relative;
+    z-index: 20;
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+}
+
+.massive-search-form {
+    display: flex;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(162, 107, 250, 0.15);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-block {
+    flex: 1;
+    padding: 10px 20px;
+    min-width: 200px;
+}
+
+.search-block label {
+    display: block;
+    font-size: 0.85rem;
+    color: #718096;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.search-block input, .search-block select {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-divider {
+    width: 1px;
+    height: 50px;
+    background: #e2e8f0;
+}
+
+.massive-btn {
+    padding: 20px 40px;
+    font-size: 1.1rem;
+    border-radius: 16px;
+    width: auto;
+    margin-left: 10px;
+}
+
+/* Amenities Section */
+.amenities-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin: 60px 0;
+    text-align: center;
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background: rgba(162, 107, 250, 0.1);
+    color: #a26bfa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin: 0 auto 15px auto;
+    transition: transform 0.3s ease;
+}
+
+.amenity-item:hover .icon-circle {
+    transform: scale(1.1);
+    background: #a26bfa;
+    color: #ffffff;
+}
+
+.amenity-item h4 {
+    font-size: 1.1rem;
+    color: #1a1a2e;
+}
+
+.amenity-item p {
+    font-size: 0.9rem;
+    color: #718096;
+}
+
+/* Premium Room Grid */
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    color: #1a1a2e;
+}
+
+.section-header p {
+    color: #718096;
+}
+
+.premium-room-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.premium-room-card {
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.premium-room-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(162, 107, 250, 0.12);
+}
+
+.room-img-container {
+    position: relative;
+    height: 240px;
+}
+
+.img-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #e9ebfa 0%, #d5d9f5 100%);
+}
+
+.room-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #a26bfa;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(162, 107, 250, 0.3);
+}
+
+.room-info {
+    padding: 30px;
+}
+
+.room-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.room-header h3 {
+    font-size: 1.4rem;
+    color: #1a1a2e;
+}
+
+.stars {
+    color: #fbbf24; /* Gold */
+    font-size: 0.85rem;
+}
+
+.room-features {
+    display: flex;
+    gap: 20px;
+    color: #718096;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.room-features i {
+    color: #a26bfa;
+    margin-right: 5px;
+}
+
+.room-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-block {
+    color: #1a1a2e;
+}
+
+.price-block .currency {
+    font-size: 1rem;
+    font-weight: 700;
+    vertical-align: top;
+}
+
+.price-block .amount {
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.price-block .period {
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+.book-btn {
+    width: auto;
+    padding: 12px 25px;
+    border-radius: 12px;
+    margin-top: 0;
+}
+
+/* ==========================================================================
+   Dashboard Web-App Layout (Overrides base body for this view)
+   ========================================================================== */
+.app-body {
+    background-color: #f7f9fc;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden; /* Prevents whole page from scrolling */
+}
+
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 80px 300px 1fr 380px;
+    height: 100vh;
+}
+
+/* --- Column 1: Icon Navigation --- */
+.icon-sidebar {
+    background: #ffffff;
+    border-right: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.logo-mark {
+    color: #a26bfa;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.nav-icons {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+}
+
+.nav-icons a {
+    color: #a0aec0;
+    font-size: 1.4rem;
+    transition: color 0.3s;
+}
+
+.nav-icons li.active a, .nav-icons a:hover {
+    color: #a26bfa;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: #a0aec0;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background: #e2e8f0;
+    border-radius: 50%;
+}
+
+/* --- Column 2: Filters Sidebar --- */
+.filter-sidebar {
+    background: #ffffff;
+    padding: 30px 20px;
+    overflow-y: auto;
+    border-right: 1px solid #e2e8f0;
+}
+
+.filter-sidebar h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #1a1a2e;
+}
+
+.search-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.search-box i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a0aec0;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    background: #f7f9fc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #a26bfa;
+}
+
+.filter-group {
+    margin-bottom: 25px;
+}
+
+.filter-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #4a5568;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+/* --- Column 3: Main Content --- */
+.main-content {
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.hero-image-card {
+    position: relative;
+    height: 400px;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.hero-img-bg {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover;
+}
+
+.hero-overlay-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #fff;
+}
+
+.hero-overlay-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.rating {
+    color: #fbbf24;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.host-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 20px;
+}
+
+.host-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #cbd5e0;
+}
+
+.room-overview h2, .amenities-grid h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.room-overview p {
+    color: #718096;
+    margin-bottom: 10px;
+}
+
+.show-more {
+    color: #1a1a2e;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4a5568;
+}
+
+.grid-item i {
+    color: #a26bfa;
+    width: 20px;
+}
+
+.btn.outline-purple {
+    background: transparent;
+    border: 2px solid #a26bfa;
+    color: #a26bfa;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* --- Column 4: Booking Sidebar --- */
+.booking-sidebar {
+    background: #ffffff;
+    padding: 30px;
+    border-left: 1px solid #e2e8f0;
+    overflow-y: auto;
+}
+
+.booking-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.price-header {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #a0aec0;
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+
+.new-price {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1a1a2e;
+}
+
+.night-text {
+    color: #718096;
+}
+
+.date-inputs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.input-box {
+    flex: 1;
+}
+
+.input-box label {
+    display: block;
+    font-size: 0.8rem;
+    color: #718096;
+    margin-bottom: 5px;
+}
+
+.input-box input, .input-box select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.full-width {
+    margin-bottom: 25px;
+}
+
+.full-btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    background-color: #b57df3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.full-btn:hover {
+    background-color: #9d5ce6;
+}
+
+.charge-warning {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #a0aec0;
+    margin-top: 10px;
+}
+
+.mini-map-card {
+    margin-top: 30px;
+    height: 150px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80') center/cover;
+}
+
+.map-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffff;
+    color: #1a1a2e;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* ==========================================================================
+   Max Level Upgrades (Append to style.css)
+   ========================================================================== */
+
+/* Fix the Sidebar Navigation Spacing */
+.icon-sidebar {
+    justify-content: flex-start;
+    padding-top: 30px;
+}
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.nav-icons {
+    margin-top: 50px; /* Controls gap under the H logo */
+}
+.user-profile {
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+/* Premium Image Gallery (Replaces single hero image) */
+.premium-gallery {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    height: 400px;
+    margin-bottom: 25px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.gallery-main {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+.gallery-side {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+.gallery-small {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+.room-title-block {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+.room-title-block h1 {
+    font-size: 2.2rem;
+    color: #1a1a2e;
+    margin-bottom: 5px;
+}
+
+/* Premium Check-in/Check-out UI */
+.premium-date-picker {
+    display: flex;
+    border: 1px solid #a0aec0;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+}
+.border-right {
+    border-right: 1px solid #a0aec0;
+}
+.date-input-box {
+    flex: 1;
+    padding: 10px 15px;
+    background: #ffffff;
+}
+.date-input-box label {
+    display: block;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #1a1a2e;
+}
+.date-input-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+    color: #4a5568;
+    background: transparent;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.premium-guest-select {
+    border: 1px solid #a0aec0;
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+    padding: 10px 15px;
+    margin-bottom: 25px;
+}
+.premium-guest-select label {
+    display: block;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #1a1a2e;
+}
+.premium-guest-select select {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    margin-top: 5px;
+    cursor: pointer;
+    background: transparent;
+}
+
+/* Dynamic Price Calculator Styles */
+.price-calculator {
+    margin-bottom: 20px;
+    animation: fadeIn 0.3s ease-in;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.calc-row {
+    display: flex;
+    justify-content: space-between;
+    color: #718096;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.calc-final {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e2e8f0;
+    font-weight: 800;
+    color: #1a1a2e;
+    font-size: 1.1rem;
+}
+
+/* ==========================================================================
+   Premium Custom Scrollbar
+   ========================================================================== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f7f9fc;
+}
+::-webkit-scrollbar-thumb {
+    background: #b57df3;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #a26bfa;
+}
+
+/* ==========================================================================
+   Image Zoom (Lightbox)
+   ========================================================================== */
+.zoomable-img {
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+.zoomable-img:hover {
+    transform: scale(1.02);
+}
+#lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(18, 18, 30, 0.95);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+}
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    animation: zoomIn 0.3s ease;
+}
+#lightbox-close {
+    position: absolute;
+    top: 30px; right: 40px;
+    color: white; font-size: 2.5rem;
+    cursor: pointer; transition: color 0.3s;
+}
+#lightbox-close:hover { color: #b57df3; }
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Premium Colorful Date Box Upgrade */
+.premium-date-picker {
+    background: linear-gradient(135deg, #f3ebff 0%, #ffffff 100%);
+    border: 2px solid #e2d1f9;
+}
+.date-input-box label { color: #a26bfa; font-weight: 900; }
+.date-input-box input { font-weight: 700; color: #1a1a2e; }
